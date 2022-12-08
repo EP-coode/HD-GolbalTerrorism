@@ -1,0 +1,651 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0d3a3632-54f3-4513-a542-6082565a7513" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Global Terrorism</ID>
+  <Name>Global Terrorism</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="30" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1574" scrolltop="-419" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="70" x="24892" y="13970" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimData" left="20" top="5513" logicalid="15" controlid="1" masterid="0" hint1="0" hint2="0" width="3620" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000240e00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimData" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimGrupaTerrorystyczna" left="6474" top="0" logicalid="16" controlid="2" masterid="0" hint1="0" hint2="0" width="4170" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004a1000009b070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimGrupaTerrorystyczna" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimLokalizacja" left="13478" top="2980" logicalid="17" controlid="3" masterid="0" hint1="0" hint2="0" width="3048" height="3387" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e80b00003b0d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimLokalizacja" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimBron" left="13478" top="8767" logicalid="18" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimBron" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCelAtaku" left="3009" top="13114" logicalid="19" controlid="5" masterid="0" hint1="0" hint2="0" width="3175" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000670c000003090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimCelAtaku" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimRodzajAtaku" left="8373" top="12993" logicalid="20" controlid="6" masterid="0" hint1="0" hint2="0" width="5525" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000951500000a100000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimRodzajAtaku" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactAtakTerrorystyczny" left="6040" top="4347" logicalid="21" controlid="7" masterid="0" hint1="0" hint2="0" width="5038" height="6217" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ae13000049180000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactAtakTerrorystyczny" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Text" left="-2773" top="10992" logicalid="22" controlid="8" masterid="0" hint1="0" hint2="0" width="6000" height="1500" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="0002000070170000dc0500000300640000000500008008000080000000003a0001ee00009001d0780200065461686f6d610100730000000000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj />
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8536" top="10264" logicalid="23" controlid="9" masterid="0" hint1="0" hint2="0" width="873" height="3229" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactAtakTerrorystyczny_DimRodzajAtaku]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="7" sourceattachpoint="0" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8935" y="12993" />
+              <point x="8935" y="11839" />
+              <point x="9109" y="11839" />
+              <point x="9109" y="10564" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6510" top="1448" logicalid="24" controlid="10" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactAtakTerrorystyczny_DimGrupaTerrorystyczna]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="7" sourceattachpoint="1" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6909" y="1947" />
+              <point x="6909" y="4347" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3340" top="5347" logicalid="25" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactAtakTerrorystyczny_DimData]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="7" sourceattachpoint="15" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3640" y="5746" />
+              <point x="4840" y="5746" />
+              <point x="4840" y="5805" />
+              <point x="6040" y="5805" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10778" top="8791" logicalid="26" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactAtakTerrorystyczny_DimBron]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="7" sourceattachpoint="10" destattachpoint="35" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13478" y="9190" />
+              <point x="12278" y="9190" />
+              <point x="12278" y="9105" />
+              <point x="11078" y="9105" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10778" top="4274" logicalid="27" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactAtakTerrorystyczny_DimLokalizacja]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="7" sourceattachpoint="14" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13478" y="4673" />
+              <point x="12278" y="4673" />
+              <point x="12278" y="4705" />
+              <point x="11078" y="4705" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="5297" top="10264" logicalid="28" controlid="14" masterid="0" hint1="0" hint2="0" width="1362" height="3350" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactAtakTerrorystyczny_DimCelAtaku]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="7" sourceattachpoint="8" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5696" y="13114" />
+              <point x="5696" y="11839" />
+              <point x="6359" y="11839" />
+              <point x="6359" y="10564" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1574</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-419</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-2773</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>70</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="4fdd446a-abcf-4a06-8cd8-7dae63ff2ffc">
+      <ID>Lokalizacja</ID>
+      <Name>Lokalizacja</Name>
+      <DimensionID>Lokalizacja</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e77ebc1f-1b2b-4aa6-9ea6-59db1684bfb2">
+          <AttributeID>Lokalizacja Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7c58aea-1a3c-4a7f-9b61-1401b831db6b">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d50e654e-5d38-4566-a414-122af75f5203">
+          <AttributeID>Region</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b560b45b-ee1b-4685-be86-c306160987f8">
+          <AttributeID>Dlugosc Geo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ade50427-f9fb-40b4-a52c-d5ae6b35ebf4">
+          <AttributeID>Szerokosc Geo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c7d13a2a-0965-4177-a9fb-6caac69529f7">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b0e34d7-d19c-409f-990d-673ac5e6ad7f">
+          <AttributeID>Provstate</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6ab88506-02cb-43f9-924d-597945381e35">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="652273bb-e07a-4c02-a938-25ec9e8eee1e">
+      <ID>Bron</ID>
+      <Name>Bron</Name>
+      <DimensionID>Bron</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b0f69732-3f08-42ce-ace8-f11cfae617b5">
+          <AttributeID>Bron Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="921fa340-684c-4b96-84b6-c93e0c20f083">
+          <AttributeID>Typ Broni</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="10c93584-c3f8-405a-9bde-316b2d3c9dd4">
+          <AttributeID>Pod Typ Broni</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="e189d54d-8d19-44d4-8428-b04b20ca4e3f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="ff95d2a4-8aec-4751-87ae-fc45a577448e">
+      <ID>Data</ID>
+      <Name>Data</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="28c31d7b-c25a-41c7-b3c4-b24c40f18a5b">
+          <AttributeID>Data Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="99b1e468-a38f-4e6d-b453-1fb4f07822b3">
+          <AttributeID>Dzien</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="62113a34-928b-4ab7-b0b5-35af488e4816">
+          <AttributeID>Miesiac</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1bc16868-10a7-4752-8cc6-3240fe905829">
+          <AttributeID>Rok</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4373e2b7-328f-4edb-b5b9-168354ce9219">
+          <AttributeID>Dzien Tygodnia Ang</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="aadbc3e2-7c5a-483a-ad9e-27d3b677233e">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="dc7b5c4b-b3fb-406d-87dc-17982f1addbc">
+      <ID>Grupa Terrorystyczna</ID>
+      <Name>Grupa Terrorystyczna</Name>
+      <DimensionID>Grupa Terrorystyczna</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0a1c607b-52b2-4270-9aae-6580f3d389e7">
+          <AttributeID>Grupa Terrorystyczna Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aaa7cc98-cb05-40c3-a4b0-b7f042b36d08">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a2a0b0bf-db3a-4782-bbea-819ae7e8d792">
+          <AttributeID>Group Name Certain</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cec06099-2912-4df6-ba42-f5b3d8b82fc5">
+      <ID>Rodzaj Ataku</ID>
+      <Name>Rodzaj Ataku</Name>
+      <DimensionID>Rodzaj Ataku</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="43b6964c-14f6-4dce-8c8a-a2c0a7bf72c5">
+          <AttributeID>Rodzaj Ataku Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d240a32a-40af-4c36-855d-09a131021ef3">
+          <AttributeID>Samobójstwo Txt</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="212662d4-4255-41bf-87bc-ed503b9cea4f">
+          <AttributeID>Zakładnicy Txt</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0df90a6f-c982-404d-ab7f-74cfe78c8f40">
+          <AttributeID>Organizowany Przez Jednostke Txt</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f425ce94-de69-4ee8-b0b0-55baf83b4196">
+          <AttributeID>Zadany Okup Txt</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57b0c667-fb5d-4ff4-b396-39919cf634f8">
+          <AttributeID>Typ Ataku</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="efcb5c6f-5cf1-4946-904b-5f74513b1450">
+      <ID>Cel Ataku</ID>
+      <Name>Cel Ataku</Name>
+      <DimensionID>Cel Ataku</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3f9f17cd-709e-4e32-86da-be2657947c61">
+          <AttributeID>Cel Ataku Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1bd54754-0466-4d0d-807a-b8717840b6ad">
+          <AttributeID>Natality</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="87a6fb61-eacb-4078-8132-da43d99faf1c">
+          <AttributeID>Target Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3c6b2968-ac30-43a2-a81e-a6f1f2fdfea9">
+          <AttributeID>Target Sub Type</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="76657a44-4cb0-4611-83ad-33d0c4c820b4">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="94380d55-6c86-4e86-994c-f087ba888558">
+      <ID>Fact Atak Terrorystyczny</ID>
+      <Name>Fact Atak Terrorystyczny</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1108186a-d73d-4df1-ac4e-2549e9e740f7">
+          <ID>Event Id</ID>
+          <Name>Event Id</Name>
+          <Source dwd:design-time-name="08a4877f-7bd0-4a39-84cc-230d598fa641">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8a6d1d11-8897-4f76-97d6-962a2f5fbceb">
+              <TableID>dbo_FactAtakTerrorystyczny</TableID>
+              <ColumnID>EventId</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="075ede08-7ff3-46ac-a74b-9fb757d20f69">
+          <ID>Rannych</ID>
+          <Name>Rannych</Name>
+          <Source dwd:design-time-name="664904ef-9ef6-4ecc-af49-083032c6758d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a3fab5ea-763a-435a-a3df-2a6889eb9bc1">
+              <TableID>dbo_FactAtakTerrorystyczny</TableID>
+              <ColumnID>Rannych</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cb4885aa-e555-4f9c-bf59-972d9094c439">
+          <ID>Zabitych</ID>
+          <Name>Zabitych</Name>
+          <Source dwd:design-time-name="45fb0cc0-093a-47ee-92e7-bb14004f4665">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="89b79f3a-12e3-4b22-aad5-137103ec68c9">
+              <TableID>dbo_FactAtakTerrorystyczny</TableID>
+              <ColumnID>Zabitych</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="152e00b7-f55f-4dd6-be05-940a950416fa">
+          <ID>Rannych Terrorystow</ID>
+          <Name>Rannych Terrorystow</Name>
+          <Source dwd:design-time-name="aa510736-1d83-4161-8e9e-53bb588d8527">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="eb04c998-10f6-463a-9628-d0139ab8f8c7">
+              <TableID>dbo_FactAtakTerrorystyczny</TableID>
+              <ColumnID>RannychTerrorystow</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e93ecd50-f369-49e4-b3ee-6d24d18385f6">
+          <ID>Zabitych Terrorystow</ID>
+          <Name>Zabitych Terrorystow</Name>
+          <Source dwd:design-time-name="e6913bc6-d5b6-4c2f-a08c-d9f20505cd94">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f0b5e287-58ba-4b20-920a-d360f843bc4f">
+              <TableID>dbo_FactAtakTerrorystyczny</TableID>
+              <ColumnID>ZabitychTerrorystow</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cdefa5d6-2bf8-4618-b95f-22d1dfe72385">
+          <ID>Wartosc Uszkodzonego Mienia</ID>
+          <Name>Wartosc Uszkodzonego Mienia</Name>
+          <Source dwd:design-time-name="5609d691-4fe6-437a-9ea4-7baea4412915">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d1eaa04c-b4ac-4baa-9a5f-09e1b719ba40">
+              <TableID>dbo_FactAtakTerrorystyczny</TableID>
+              <ColumnID>WartoscUszkodzonegoMienia</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="02e9b30c-9430-4b99-9a7a-e8c525142654">
+          <ID>Zabitych Pozostałych</ID>
+          <Name>Zabitych Pozostałych</Name>
+          <Source dwd:design-time-name="986581b7-00a9-4e11-ad96-a64ade28a6ea">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="19d473e9-8943-4230-b4dc-168ebf0ad4bc">
+              <TableID>dbo_FactAtakTerrorystyczny</TableID>
+              <ColumnID>ZabitychPozostałych</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c975f783-0268-41d2-aaf4-0f87d62045b4">
+          <ID>Rannych Pozostałych</ID>
+          <Name>Rannych Pozostałych</Name>
+          <Source dwd:design-time-name="df8ea08b-e431-41bb-9ec9-4066de36f099">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="48ebd493-fe07-44de-a0a5-8e0dfca95ccc">
+              <TableID>dbo_FactAtakTerrorystyczny</TableID>
+              <ColumnID>RannychPozostałych</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d8a6adec-b5da-4b48-93a9-306b866cf0ef">
+          <ID>Fact Atak Terrorystyczny Count</ID>
+          <Name>Fact Atak Terrorystyczny Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="7d1b2096-932f-4905-9211-9309c1b20a3b">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="7fb72de3-4fab-47e8-85cb-13d73cd4b1f3">
+              <TableID>dbo_FactAtakTerrorystyczny</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ffd7272d-53e9-4593-a803-583c8eb4ac99">
+          <ID>Sukces Ataku Int</ID>
+          <Name>Sukces Ataku Sum</Name>
+          <Source dwd:design-time-name="536a4074-e07a-4003-a813-4d4a291157dd">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="22058211-4f9c-40d1-814f-a8e025679a29">
+              <TableID>dbo_FactAtakTerrorystyczny</TableID>
+              <ColumnID>SukcesAtakuInt</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="741cc1f2-4ac1-47df-ba55-40c917244f28">
+          <CubeDimensionID>Lokalizacja</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="89fb2102-69f8-43f6-ad9c-e7342833e5f0">
+              <AttributeID>Lokalizacja Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d5cdc74f-f407-4b8f-be1d-84d6e53f9196">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e42f54ec-ba2c-4da1-92d5-3fbffb067925">
+                    <TableID>dbo_FactAtakTerrorystyczny</TableID>
+                    <ColumnID>LokalizacjaId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="efc64238-716f-4689-b4b0-6c5c224dc21c">
+          <CubeDimensionID>Bron</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c11d719c-c284-4e0d-9e67-f34832baaeaf">
+              <AttributeID>Bron Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a3d75c6f-f76a-48a4-ac17-61e0f74cd3a8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="48822000-ea55-4e8c-9c46-e0b7e993da07">
+                    <TableID>dbo_FactAtakTerrorystyczny</TableID>
+                    <ColumnID>BronId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="20b64c28-050f-48e7-a14a-2278bdf21a9c">
+          <CubeDimensionID>Data</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c9baa0c7-fc31-4d43-9260-1472fe992970">
+              <AttributeID>Data Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3278ff48-f97c-4d2b-9af7-a544905aee5c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0a74f865-a58b-40ae-b292-16cd3458f47a">
+                    <TableID>dbo_FactAtakTerrorystyczny</TableID>
+                    <ColumnID>DataId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b5bbcea9-511e-460a-ad20-296e78e895be">
+          <CubeDimensionID>Grupa Terrorystyczna</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9b095fb6-a20c-4b49-aa0a-8fb06ee69e93">
+              <AttributeID>Grupa Terrorystyczna Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f7e88715-1a4a-4984-b741-a0c951295e17">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8cc3580c-2269-46cf-9b7e-23fd14db19e1">
+                    <TableID>dbo_FactAtakTerrorystyczny</TableID>
+                    <ColumnID>GrupaTerrorystycznaId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1677442a-1934-4a80-a3ef-2c2941e3fdb9">
+          <CubeDimensionID>Rodzaj Ataku</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="edbadd32-c3d5-4db2-84fc-eec8db1f5e2d">
+              <AttributeID>Rodzaj Ataku Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7f6df992-2f9e-49e2-a97e-2f82f2f048e3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3445f233-3ea9-46d9-a9e9-a5b85a6d351d">
+                    <TableID>dbo_FactAtakTerrorystyczny</TableID>
+                    <ColumnID>RodzajAtakuId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f7a94a24-0eff-4f23-a99d-cd13d10f6482">
+          <CubeDimensionID>Cel Ataku</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d764e270-305c-4cfa-956d-d334c1a51818">
+              <AttributeID>Cel Ataku Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d84c48d5-e6f4-4f21-8912-ac2cfbefd6d8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fa98cd3a-74c2-47a5-b2a9-b24af0797477">
+                    <TableID>dbo_FactAtakTerrorystyczny</TableID>
+                    <ColumnID>CelAtakuId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="5bd1470f-0666-499a-b57e-46c538794d00">
+    <DataSourceViewID>Global Terrorism</DataSourceViewID>
+  </Source>
+</Cube>

@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>GlobalTerrorismAnalysys</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>RPKQs6EIElm9Ey5hkJ4jgFQHXlw=13.06.2022 15:30:4113.06.2022 15:30:41</TimeStamp>
+        <ID>
+          <String>Global Terrorism HD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Mi4Y1RD1ryvhj1fGKZEij0etw+0=14.06.2022 18:42:0213.06.2022 15:31:05</TimeStamp>
+        <ID>
+          <String>Global Terrorism</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qaAe1v0tnZAsO0tuppZ4LA4Qi0k=14.06.2022 11:50:5913.06.2022 16:36:25</TimeStamp>
+        <ID>
+          <String>Bron</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>aIzhJ1Bj/yVXJTsDmMCs9n56BYo=14.06.2022 11:50:5913.06.2022 16:36:50</TimeStamp>
+        <ID>
+          <String>Cel Ataku</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JKASPrdrn+yx6wkDaGXnusWE2Zs=13.06.2022 19:24:4513.06.2022 16:37:06</TimeStamp>
+        <ID>
+          <String>Data</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ia+5ehnbETp7cJUwtZdqqAQg4G4=13.06.2022 16:37:4913.06.2022 16:37:49</TimeStamp>
+        <ID>
+          <String>Grupa Terrorystyczna</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9xQnti4mPL6uQ2xlWzePEwwifFg=13.06.2022 19:24:2713.06.2022 16:45:58</TimeStamp>
+        <ID>
+          <String>Lokalizacja</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WdVuPKENx93og4ZCuTmFRRNNTmE=14.06.2022 17:13:2813.06.2022 18:42:11</TimeStamp>
+        <ID>
+          <String>Rodzaj Ataku</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>3/TOzYM7/2VBZVH4hApKRiTB/U4=14.06.2022 18:42:0513.06.2022 18:49:17ek1+9fhMbJzTENU+SZ3GWipWY9s=13.06.2022 18:49:1713.06.2022 18:49:17</TimeStamp>
+        <ID>
+          <String>Global Terrorism</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>yClD47ZSlCC0Xjpm/HO6pwH0eTQ=13.06.2022 15:27:2513.06.2022 15:27:25</TimeStamp>
+      <ID>
+        <String>GlobalTerrorismAnalysys</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-06-14T16:42:07.113333Z</LastDeployed>
+</DeploymentSnapshot>

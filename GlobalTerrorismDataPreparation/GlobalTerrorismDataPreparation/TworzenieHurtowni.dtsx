@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/12/2022 3:33:31 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-3JGTB35"
+  DTS:CreatorName="DESKTOP-3JGTB35\epenl"
+  DTS:DTSID="{DDF82C65-8F60-4E08-9B57-0A5A260AC63E}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{10ABE72F-7F0C-4BF2-800D-004DE1B74B2D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.GlobalTerrorism]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DE09490B-B006-4630-B853-F7FB8F225491}"
+      DTS:ObjectName="localhost.GlobalTerrorism">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=GlobalTerrorism;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Utwórz tabele hurtowni"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{80C8352F-2790-4922-85F9-9842D27B23EE}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Utwórz tabele hurtowni"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DE09490B-B006-4630-B853-F7FB8F225491}"
+          SQLTask:SqlStatementSource="USE GlobalTerrorism;&#xA;&#xA;CREATE TABLE DimData(&#xA;&#x9;DataId int IDENTITY(1,1) NOT NULL, &#xA;&#x9;Dzien tinyint NOT NULL, &#xA;&#x9;Miesiac tinyint NOT NULL,&#xA;&#x9;Rok smallint NOT NULL,&#xA;&#xA;&#x9;CONSTRAINT PK_DimData PRIMARY KEY (DataId)&#xA;);&#xA;&#xA;CREATE TABLE DimBron(&#xA;&#x9;BronId int IDENTITY(1,1) NOT NULL,&#xA;&#x9;TypBroni nvarchar(128) NOT NULL,&#xA;&#x9;PodTypBroni nvarchar(64) NULL, -- 11% NULL&#xA;&#xA;&#x9;CONSTRAINT PK_DimBron PRIMARY KEY (BronId)&#xA;);&#xA;&#xA;CREATE TABLE DimCelAtaku (&#xA;&#x9;CelAtakuId int IDENTITY(1,1) NOT NULL,&#xA;&#x9;Natality nvarchar(64) NOT NULL,&#xA;&#x9;TargetType nvarchar(64) NOT NULL, -- &#xA;&#x9;TargetSubType nvarchar(128) NULL, -- 5% NULL&#xA;&#xA;&#x9;CONSTRAINT PK_DimCelAtaku PRIMARY KEY (CelAtakuId)&#xA;);&#xA;&#xA;CREATE TABLE DimGrupaTerrorystyczna (&#xA;&#x9;GrupaTerrorystycznaId int IDENTITY(1,1) NOT NULL,&#xA;&#x9;[Name] nvarchar(128) NOT NULL,&#xA;&#x9;GroupNameCertain bit NOT NULL, -- 1%&lt; NULL&#xA;&#xA;&#x9;CONSTRAINT PK_DimGrupaTerrorystyczna PRIMARY KEY (GrupaTerrorystycznaId)&#xA;);&#xA;&#xA;CREATE TABLE DimLokalizacja (&#xA;&#x9;LokalizacjaId int IDENTITY(1,1) NOT NULL,&#xA;&#x9;Country nvarchar(64) NOT NULL,&#xA;&#x9;City nvarchar(128) NOT NULL, -- 1% &lt; NULL&#xA;&#x9;Provstate nvarchar(64) NOT NULL, -- 1% &lt; NULL&#xA;&#x9;Region nvarchar(32) NOT NULL,&#xA;&#x9;DlugoscGeo float NOT NULL, -- 2.5% NULL&#xA;&#x9;SzerokoscGeo float NOT NULL, -- 2.5% NULL&#xA;&#xA;&#x9;CONSTRAINT PK_DimLokalizacja PRIMARY KEY (LokalizacjaId)&#xA;);&#xA;&#xA;CREATE TABLE DimRodzajAtaku(&#xA;&#x9;RodzajAtakuId int IDENTITY(1,1) NOT NULL,&#xA;&#x9;Samobojstwo bit NOT NULL,&#xA;&#x9;OrganizowanyPrzezJednaOsobe bit NOT NULL,&#xA;&#x9;TypAtaku nvarchar(64) NOT NULL,&#xA;&#x9;RzadanyOkup bit NOT NULL,&#xA;&#x9;Zakladnicy bit NOT NULL,&#xA;&#xA;&#x9;CONSTRAINT PK_DimRodzajAtaku PRIMARY KEY (RodzajAtakuId)&#xA;);&#xA;&#xA;CREATE TABLE FactAtakTerrorystyczny(&#xA;&#x9;FactAtakTerrorystycznyId int IDENTITY(1,1) NOT NULL,&#xA;&#x9;EventId bigint NOT NULL,&#xA;&#x9;Rannych int NOT NULL, -- 9% NULL&#xA;&#x9;Zabitych int NOT NULL, -- 5% NULL&#xA;&#x9;RannychTerrorystow int NULL, -- 38% NULL&#xA;&#x9;ZabitychTerrorystow int NULL, -- 36% NULL&#xA;&#x9;SukcessAtaku bit NULL, -- 57% NULL &#xA;&#x9;WartoscUszkodzonegoMienia float NULL, -- 78 % NULL&#xA;&#xA;&#x9;DataId int NOT NULL,&#xA;&#x9;BronId int NOT NULL,&#xA;&#x9;CelAtakuId int NOT NULL,&#xA;&#x9;GrupaTerrorystycznaId int NOT NULL,&#xA;&#x9;LokalizacjaId int NOT NULL,&#xA;&#x9;RodzajAtakuId int NOT NULL,&#xA;&#xA;&#x9;CONSTRAINT PK_FactAtakTerrorystyczny PRIMARY KEY (FactAtakTerrorystycznyId),&#xA;&#x9;CONSTRAINT FK_FactAtakTerrorystyczny_DimData FOREIGN KEY (DataId)&#xA;&#x9;&#x9;REFERENCES DimData (DataId),&#xA;&#x9;CONSTRAINT FK_FactAtakTerrorystyczny_DimBron FOREIGN KEY (BronId)&#xA;&#x9;&#x9;REFERENCES DimBron (BronId),&#xA;&#x9;CONSTRAINT FK_FactAtakTerrorystyczny_DimCelAtaku FOREIGN KEY (CelAtakuId)&#xA;&#x9;&#x9;REFERENCES DimCelAtaku (CelAtakuId),&#xA;&#x9;CONSTRAINT FK_FactAtakTerrorystyczny_DimGrupaTerrorystyczna FOREIGN KEY (GrupaTerrorystycznaId)&#xA;&#x9;&#x9;REFERENCES DimGrupaTerrorystyczna (GrupaTerrorystycznaId),&#xA;&#x9;CONSTRAINT FK_FactAtakTerrorystyczny_DimLokalizacja FOREIGN KEY (LokalizacjaId)&#xA;&#x9;&#x9;REFERENCES DimLokalizacja (LokalizacjaId),&#xA;&#x9;CONSTRAINT FK_FactAtakTerrorystyczny_DimRodzajAtaku FOREIGN KEY (RodzajAtakuId)&#xA;&#x9;&#x9;REFERENCES DimRodzajAtaku (RodzajAtakuId),&#xA;);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Utwórz tabele tymczasowe hurtowni"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5DF52DE5-56EC-4276-B902-AC96A9114612}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Utwórz tabele tymczasowe hurtowni"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DE09490B-B006-4630-B853-F7FB8F225491}"
+          SQLTask:SqlStatementSource="USE GlobalTerrorism;&#xA;&#xA;DELETE FROM TmpDimData WHERE 1=1;&#xA;&#xA;DELETE FROM TmpDimBron WHERE 1=1;&#xA;&#xA;DELETE FROM TmpDimCelAtaku WHERE 1=1;&#xA;&#xA;DELETE FROM TmpDimGrupaTerrorystyczna WHERE 1=1;&#xA;&#xA;DELETE FROM TmpDimLokalizacja WHERE 1=1;&#xA;&#xA;DELETE FROM TmpDimRodzajAtaku WHERE 1=1;&#xA;&#xA;DELETE FROM TmpFactAtakTerrorystyczny WHERE 1=1;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Utwórz tabele hurtowni"
+          TopLeft="149,97" />
+        <NodeLayout
+          Size="237,48"
+          Id="Package\Utwórz tabele tymczasowe hurtowni"
+          TopLeft="368,96" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

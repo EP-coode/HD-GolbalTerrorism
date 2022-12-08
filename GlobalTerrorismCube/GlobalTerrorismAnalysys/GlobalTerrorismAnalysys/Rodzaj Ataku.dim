@@ -1,0 +1,219 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="70ffd6d5-9456-41db-b39d-c472fce12285" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Rodzaj Ataku</ID>
+  <Name>Rodzaj Ataku</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2298" scrolltop="-5567" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7916" y="15092" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimRodzajAtaku" left="-573" top="-2858" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5461" height="4276" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000055150000b4100000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimRodzajAtaku" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2298</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5567</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-573</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2858</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="262">
+            <Shape Id="Rodzaj Ataku Id" Expanded="true">
+              <Attributes>
+                <Attribute Id="Rodzaj Ataku Id" />
+                <Attribute Id="Organizowany Przez Jedna Osobe" />
+                <Attribute Id="Samobojstwo" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8b35ffde-ec9c-495a-9b22-0df2200574f9">
+    <DataSourceViewID>Global Terrorism</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="3519fac2-32d0-422a-ab40-bd38563d4f62">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="1ce4b7b2-5882-4fa9-a467-39c97f4d728e">
+      <ID>Rodzaj Ataku Id</ID>
+      <Name>Rodzaj Ataku Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46278818-81aa-4520-bb43-545860ca5e6b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1689653c-84e4-4d9f-9a9e-740a17a4ab59">
+            <TableID>dbo_DimRodzajAtaku</TableID>
+            <ColumnID>RodzajAtakuId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c3303ec7-aefd-45ad-be3e-87eb84d5cae5">
+          <AttributeID>Samobójstwo Txt</AttributeID>
+          <Name>Samobójstwo Txt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5ef2b6cd-aab2-4021-af21-b2434a0215f1">
+          <AttributeID>Zakładnicy Txt</AttributeID>
+          <Name>Zakładnicy Txt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8b5806f6-75cc-430c-bfa4-129fc47885ea">
+          <AttributeID>Organizowany Przez Jednostke Txt</AttributeID>
+          <Name>Organizowany Przez Jednostke Txt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3dff9b8a-8659-47fc-98c9-9090c1cf504c">
+          <AttributeID>Zadany Okup Txt</AttributeID>
+          <Name>Zadany Okup Txt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eb4b6b27-765d-4612-9a63-0af4d3e9ee0e">
+          <AttributeID>Typ Ataku</AttributeID>
+          <Name>Typ Ataku</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="39ef4570-ea43-4621-85ec-557a8990bfe7">
+      <ID>Samobójstwo Txt</ID>
+      <Name>Samobójstwo Txt</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8118266c-988d-42c4-9223-f7f814223735">
+          <DataType>WChar</DataType>
+          <DataSize>11</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19f02668-873a-4f0d-bacd-6917291e0800">
+            <TableID>dbo_DimRodzajAtaku</TableID>
+            <ColumnID>SamobójstwoTxt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8ffb751f-d099-4b34-b268-ab3410e5fc7a">
+      <ID>Zakładnicy Txt</ID>
+      <Name>Zakładnicy Txt</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="598a7ea7-c642-44a8-877c-cd8106b3e7b8">
+          <DataType>WChar</DataType>
+          <DataSize>18</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2249bfb6-61c9-484f-a899-d14ecc48b6b1">
+            <TableID>dbo_DimRodzajAtaku</TableID>
+            <ColumnID>ZakładnicyTxt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6717a235-4fe7-42a6-b57f-ce64a4df0980">
+      <ID>Organizowany Przez Jednostke Txt</ID>
+      <Name>Organizowany Przez Jednostke Txt</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="30358849-3e3e-4c0e-8334-f5eae4dfbc18">
+          <DataType>WChar</DataType>
+          <DataSize>13</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5858ef2-cb92-4763-9af6-67f03bcc0a26">
+            <TableID>dbo_DimRodzajAtaku</TableID>
+            <ColumnID>OrganizowanyPrzezJednostkeTxt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e1384c70-7548-40cd-85ff-3fb547aad120">
+      <ID>Zadany Okup Txt</ID>
+      <Name>Zadany Okup Txt</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c33af334-398c-4f18-92fa-205179a0acca">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f1edc2b-5973-434c-93e9-890d6a8eefea">
+            <TableID>dbo_DimRodzajAtaku</TableID>
+            <ColumnID>ZadanyOkupTxt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5201baf0-20e7-4369-8ccb-13bb69f2a926">
+      <ID>Typ Ataku</ID>
+      <Name>Typ Ataku</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d64e6490-2f36-49ba-a215-7823ac664824">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbc54544-45d1-4a2a-ab7a-b4d7348a2eea">
+            <TableID>dbo_DimRodzajAtaku</TableID>
+            <ColumnID>TypAtaku</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

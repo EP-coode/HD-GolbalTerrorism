@@ -1,0 +1,2291 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0525.0851                               -->
+<workbook original-version='18.1' source-build='2022.1.2 (20221.22.0525.0851)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='localhost' inline='true' name='msolap.09hmo0v17dq15o18swc031oioql7' version='18.1'>
+      <connection authentication='sspi' class='msolap' convert-to-extract-prompted='no' dbname='GlobalTerrorismAnalysys' filename='' server='localhost' tablename='Global Terrorism'>
+        <metadata-records>
+          <metadata-record class='dimension'>
+            <remote-name>[Bron]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Bron]</local-name>
+            <remote-alias>[Bron]</remote-alias>
+            <caption>Bron</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>197</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Bron].[Rozaj Broni]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Cel Ataku]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Cel Ataku]</local-name>
+            <remote-alias>[Cel Ataku]</remote-alias>
+            <caption>Cel Ataku</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>39926</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Cel Ataku].[Typ Celu]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Data]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Data]</local-name>
+            <remote-alias>[Data]</remote-alias>
+            <caption>Data</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>64281</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Data].[Data]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Grupa Terrorystyczna]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Grupa Terrorystyczna]</local-name>
+            <remote-alias>[Grupa Terrorystyczna]</remote-alias>
+            <caption>Grupa Terrorystyczna</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>17137</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Grupa Terrorystyczna].[Group Name Certain]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Lokalizacja]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Lokalizacja]</local-name>
+            <remote-alias>[Lokalizacja]</remote-alias>
+            <caption>Lokalizacja</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>165754</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Lokalizacja].[Lokalizacja]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Measures]</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[Measures]</local-name>
+            <remote-alias>[Measures]</remote-alias>
+            <caption>Measures</caption>
+            <local-type>real</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>10</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Measures]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Rodzaj Ataku]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Rodzaj Ataku]</local-name>
+            <remote-alias>[Rodzaj Ataku]</remote-alias>
+            <caption>Rodzaj Ataku</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>122</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Rodzaj Ataku].[Typ Ataku]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Bron].[Bron Id]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Bron].[Bron Id]</local-name>
+            <parent-name>[Bron]</parent-name>
+            <remote-alias>[Bron].[Bron Id]</remote-alias>
+            <caption>Bron Id</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>197</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Bron].[Bron Id].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Bron].[Pod Typ Broni]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Bron].[Pod Typ Broni]</local-name>
+            <parent-name>[Bron]</parent-name>
+            <remote-alias>[Bron].[Pod Typ Broni]</remote-alias>
+            <caption>Pod Typ Broni</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>32</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Bron].[Pod Typ Broni].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Bron].[Rozaj Broni]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Bron].[Rozaj Broni]</local-name>
+            <parent-name>[Bron]</parent-name>
+            <remote-alias>[Bron].[Rozaj Broni]</remote-alias>
+            <caption>Rozaj Broni</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>45</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Bron].[Rozaj Broni].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>true</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Bron].[Typ Broni]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Bron].[Typ Broni]</local-name>
+            <parent-name>[Bron]</parent-name>
+            <remote-alias>[Bron].[Typ Broni]</remote-alias>
+            <caption>Typ Broni</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Bron].[Typ Broni].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Bron].[Bron Id].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Bron].[Bron Id].[(All)]</local-name>
+            <parent-name>[Bron].[Bron Id]</parent-name>
+            <remote-alias>[Bron].[Bron Id].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Bron].[Bron Id].[Bron Id]</remote-name>
+            <local-name>[Bron].[Bron Id].[Bron Id]</local-name>
+            <parent-name>[Bron].[Bron Id]</parent-name>
+            <remote-alias>[Bron].[Bron Id].[Bron Id].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Bron Id</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>197</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Bron].[Bron Id] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Bron].[Pod Typ Broni].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Bron].[Pod Typ Broni].[(All)]</local-name>
+            <parent-name>[Bron].[Pod Typ Broni]</parent-name>
+            <remote-alias>[Bron].[Pod Typ Broni].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Bron].[Pod Typ Broni].[Pod Typ Broni]</remote-name>
+            <local-name>[Bron].[Pod Typ Broni].[Pod Typ Broni]</local-name>
+            <parent-name>[Bron].[Pod Typ Broni]</parent-name>
+            <remote-alias>[Bron].[Pod Typ Broni].[Pod Typ Broni].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Pod Typ Broni</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>32</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Bron].[Pod Typ Broni] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Bron].[Rozaj Broni].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Bron].[Rozaj Broni].[(All)]</local-name>
+            <parent-name>[Bron].[Rozaj Broni]</parent-name>
+            <remote-alias>[Bron].[Rozaj Broni].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Bron].[Rozaj Broni].[Typ Broni]</remote-name>
+            <local-name>[Bron].[Rozaj Broni].[Typ Broni]</local-name>
+            <parent-name>[Bron].[Rozaj Broni]</parent-name>
+            <remote-alias>[Bron].[Rozaj Broni].[Typ Broni].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Typ Broni</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Bron].[Typ Broni] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Bron].[Rozaj Broni].[Pod Typ Broni]</remote-name>
+            <local-name>[Bron].[Rozaj Broni].[Pod Typ Broni]</local-name>
+            <parent-name>[Bron].[Rozaj Broni]</parent-name>
+            <remote-alias>[Bron].[Rozaj Broni].[Pod Typ Broni].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Pod Typ Broni</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>32</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Bron].[Pod Typ Broni] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Bron].[Typ Broni].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Bron].[Typ Broni].[(All)]</local-name>
+            <parent-name>[Bron].[Typ Broni]</parent-name>
+            <remote-alias>[Bron].[Typ Broni].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Bron].[Typ Broni].[Typ Broni]</remote-name>
+            <local-name>[Bron].[Typ Broni].[Typ Broni]</local-name>
+            <parent-name>[Bron].[Typ Broni]</parent-name>
+            <remote-alias>[Bron].[Typ Broni].[Typ Broni].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Typ Broni</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Bron].[Typ Broni] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Cel Ataku].[Cel Ataku Id]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Cel Ataku].[Cel Ataku Id]</local-name>
+            <parent-name>[Cel Ataku]</parent-name>
+            <remote-alias>[Cel Ataku].[Cel Ataku Id]</remote-alias>
+            <caption>Cel Ataku Id</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>39926</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Cel Ataku].[Cel Ataku Id].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Cel Ataku].[Natality]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Cel Ataku].[Natality]</local-name>
+            <parent-name>[Cel Ataku]</parent-name>
+            <remote-alias>[Cel Ataku].[Natality]</remote-alias>
+            <caption>Natality</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>216</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Cel Ataku].[Natality].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Cel Ataku].[Target Sub Type]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Cel Ataku].[Target Sub Type]</local-name>
+            <parent-name>[Cel Ataku]</parent-name>
+            <remote-alias>[Cel Ataku].[Target Sub Type]</remote-alias>
+            <caption>Target Sub Type</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>114</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Cel Ataku].[Target Sub Type].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Cel Ataku].[Target Type]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Cel Ataku].[Target Type]</local-name>
+            <parent-name>[Cel Ataku]</parent-name>
+            <remote-alias>[Cel Ataku].[Target Type]</remote-alias>
+            <caption>Target Type</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Cel Ataku].[Target Type].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Cel Ataku].[Typ Celu]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Cel Ataku].[Typ Celu]</local-name>
+            <parent-name>[Cel Ataku]</parent-name>
+            <remote-alias>[Cel Ataku].[Typ Celu]</remote-alias>
+            <caption>Typ Celu</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>137</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Cel Ataku].[Typ Celu].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>true</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Cel Ataku Id].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Cel Ataku].[Cel Ataku Id].[(All)]</local-name>
+            <parent-name>[Cel Ataku].[Cel Ataku Id]</parent-name>
+            <remote-alias>[Cel Ataku].[Cel Ataku Id].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Cel Ataku Id].[Cel Ataku Id]</remote-name>
+            <local-name>[Cel Ataku].[Cel Ataku Id].[Cel Ataku Id]</local-name>
+            <parent-name>[Cel Ataku].[Cel Ataku Id]</parent-name>
+            <remote-alias>[Cel Ataku].[Cel Ataku Id].[Cel Ataku Id].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Cel Ataku Id</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>39926</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Cel Ataku].[Cel Ataku Id] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Natality].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Cel Ataku].[Natality].[(All)]</local-name>
+            <parent-name>[Cel Ataku].[Natality]</parent-name>
+            <remote-alias>[Cel Ataku].[Natality].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Natality].[Natality]</remote-name>
+            <local-name>[Cel Ataku].[Natality].[Natality]</local-name>
+            <parent-name>[Cel Ataku].[Natality]</parent-name>
+            <remote-alias>[Cel Ataku].[Natality].[Natality].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Natality</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>216</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Cel Ataku].[Natality] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Target Sub Type].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Cel Ataku].[Target Sub Type].[(All)]</local-name>
+            <parent-name>[Cel Ataku].[Target Sub Type]</parent-name>
+            <remote-alias>[Cel Ataku].[Target Sub Type].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Target Sub Type].[Target Sub Type]</remote-name>
+            <local-name>[Cel Ataku].[Target Sub Type].[Target Sub Type]</local-name>
+            <parent-name>[Cel Ataku].[Target Sub Type]</parent-name>
+            <remote-alias>[Cel Ataku].[Target Sub Type].[Target Sub Type].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Target Sub Type</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>114</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Cel Ataku].[Target Sub Type] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Target Type].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Cel Ataku].[Target Type].[(All)]</local-name>
+            <parent-name>[Cel Ataku].[Target Type]</parent-name>
+            <remote-alias>[Cel Ataku].[Target Type].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Target Type].[Target Type]</remote-name>
+            <local-name>[Cel Ataku].[Target Type].[Target Type]</local-name>
+            <parent-name>[Cel Ataku].[Target Type]</parent-name>
+            <remote-alias>[Cel Ataku].[Target Type].[Target Type].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Target Type</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Cel Ataku].[Target Type] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Typ Celu].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Cel Ataku].[Typ Celu].[(All)]</local-name>
+            <parent-name>[Cel Ataku].[Typ Celu]</parent-name>
+            <remote-alias>[Cel Ataku].[Typ Celu].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Typ Celu].[Target Type]</remote-name>
+            <local-name>[Cel Ataku].[Typ Celu].[Target Type]</local-name>
+            <parent-name>[Cel Ataku].[Typ Celu]</parent-name>
+            <remote-alias>[Cel Ataku].[Typ Celu].[Target Type].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Target Type</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Cel Ataku].[Target Type] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Cel Ataku].[Typ Celu].[Target Sub Type]</remote-name>
+            <local-name>[Cel Ataku].[Typ Celu].[Target Sub Type]</local-name>
+            <parent-name>[Cel Ataku].[Typ Celu]</parent-name>
+            <remote-alias>[Cel Ataku].[Typ Celu].[Target Sub Type].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Target Sub Type</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>114</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Cel Ataku].[Target Sub Type] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Data].[Data]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Data].[Data]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>[Data].[Data]</remote-alias>
+            <caption>Data</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>93</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Data].[Data].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>true</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Data].[Data Id]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Data].[Data Id]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>[Data].[Data Id]</remote-alias>
+            <caption>Data Id</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>64281</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Data].[Data Id].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Data].[Dzien]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Data].[Dzien]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>[Data].[Dzien]</remote-alias>
+            <caption>Dzien</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>32</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Data].[Dzien].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Data].[Dzien Tygodnia Ang]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Data].[Dzien Tygodnia Ang]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>[Data].[Dzien Tygodnia Ang]</remote-alias>
+            <caption>Dzien Tygodnia Ang</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>8</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Data].[Dzien Tygodnia Ang].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Data].[Miesiac]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Data].[Miesiac]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>[Data].[Miesiac]</remote-alias>
+            <caption>Miesiac</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Data].[Miesiac].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Data].[Rok]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Data].[Rok]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>[Data].[Rok]</remote-alias>
+            <caption>Rok</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>48</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Data].[Rok].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Data].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Data].[Data].[(All)]</local-name>
+            <parent-name>[Data].[Data]</parent-name>
+            <remote-alias>[Data].[Data].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Data].[Rok]</remote-name>
+            <local-name>[Data].[Data].[Rok]</local-name>
+            <parent-name>[Data].[Data]</parent-name>
+            <remote-alias>[Data].[Data].[Rok].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Rok</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>48</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Data].[Rok] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Data].[Miesiac]</remote-name>
+            <local-name>[Data].[Data].[Miesiac]</local-name>
+            <parent-name>[Data].[Data]</parent-name>
+            <remote-alias>[Data].[Data].[Miesiac].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Miesiac</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Data].[Miesiac] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Data].[Dzien]</remote-name>
+            <local-name>[Data].[Data].[Dzien]</local-name>
+            <parent-name>[Data].[Data]</parent-name>
+            <remote-alias>[Data].[Data].[Dzien].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Dzien</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>32</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Data].[Dzien] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Data Id].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Data].[Data Id].[(All)]</local-name>
+            <parent-name>[Data].[Data Id]</parent-name>
+            <remote-alias>[Data].[Data Id].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Data Id].[Data Id]</remote-name>
+            <local-name>[Data].[Data Id].[Data Id]</local-name>
+            <parent-name>[Data].[Data Id]</parent-name>
+            <remote-alias>[Data].[Data Id].[Data Id].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Data Id</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>64281</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Data].[Data Id] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Dzien].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Data].[Dzien].[(All)]</local-name>
+            <parent-name>[Data].[Dzien]</parent-name>
+            <remote-alias>[Data].[Dzien].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Dzien].[Dzien]</remote-name>
+            <local-name>[Data].[Dzien].[Dzien]</local-name>
+            <parent-name>[Data].[Dzien]</parent-name>
+            <remote-alias>[Data].[Dzien].[Dzien].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Dzien</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>32</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Data].[Dzien] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Dzien Tygodnia Ang].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Data].[Dzien Tygodnia Ang].[(All)]</local-name>
+            <parent-name>[Data].[Dzien Tygodnia Ang]</parent-name>
+            <remote-alias>[Data].[Dzien Tygodnia Ang].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Dzien Tygodnia Ang].[Dzien Tygodnia Ang]</remote-name>
+            <local-name>[Data].[Dzien Tygodnia Ang].[Dzien Tygodnia Ang]</local-name>
+            <parent-name>[Data].[Dzien Tygodnia Ang]</parent-name>
+            <remote-alias>[Data].[Dzien Tygodnia Ang].[Dzien Tygodnia Ang].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Dzien Tygodnia Ang</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>8</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Data].[Dzien Tygodnia Ang] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Miesiac].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Data].[Miesiac].[(All)]</local-name>
+            <parent-name>[Data].[Miesiac]</parent-name>
+            <remote-alias>[Data].[Miesiac].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Miesiac].[Miesiac]</remote-name>
+            <local-name>[Data].[Miesiac].[Miesiac]</local-name>
+            <parent-name>[Data].[Miesiac]</parent-name>
+            <remote-alias>[Data].[Miesiac].[Miesiac].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Miesiac</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Data].[Miesiac] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Rok].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Data].[Rok].[(All)]</local-name>
+            <parent-name>[Data].[Rok]</parent-name>
+            <remote-alias>[Data].[Rok].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Data].[Rok].[Rok]</remote-name>
+            <local-name>[Data].[Rok].[Rok]</local-name>
+            <parent-name>[Data].[Rok]</parent-name>
+            <remote-alias>[Data].[Rok].[Rok].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Rok</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>48</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Data].[Rok] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Grupa Terrorystyczna].[Group Name Certain]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Grupa Terrorystyczna].[Group Name Certain]</local-name>
+            <parent-name>[Grupa Terrorystyczna]</parent-name>
+            <remote-alias>[Grupa Terrorystyczna].[Group Name Certain]</remote-alias>
+            <caption>Group Name Certain</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Grupa Terrorystyczna].[Group Name Certain].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id]</local-name>
+            <parent-name>[Grupa Terrorystyczna]</parent-name>
+            <remote-alias>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id]</remote-alias>
+            <caption>Grupa Terrorystyczna Id</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>17137</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Grupa Terrorystyczna].[Grupa Terrorystyczna Id].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Grupa Terrorystyczna].[Name]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Grupa Terrorystyczna].[Name]</local-name>
+            <parent-name>[Grupa Terrorystyczna]</parent-name>
+            <remote-alias>[Grupa Terrorystyczna].[Name]</remote-alias>
+            <caption>Name</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>3538</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Grupa Terrorystyczna].[Name].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Grupa Terrorystyczna].[Group Name Certain].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Grupa Terrorystyczna].[Group Name Certain].[(All)]</local-name>
+            <parent-name>[Grupa Terrorystyczna].[Group Name Certain]</parent-name>
+            <remote-alias>[Grupa Terrorystyczna].[Group Name Certain].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Grupa Terrorystyczna].[Group Name Certain].[Group Name Certain]</remote-name>
+            <local-name>[Grupa Terrorystyczna].[Group Name Certain].[Group Name Certain]</local-name>
+            <parent-name>[Grupa Terrorystyczna].[Group Name Certain]</parent-name>
+            <remote-alias>[Grupa Terrorystyczna].[Group Name Certain].[Group Name Certain].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Group Name Certain</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Grupa Terrorystyczna].[Group Name Certain] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id].[(All)]</local-name>
+            <parent-name>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id]</parent-name>
+            <remote-alias>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id].[Grupa Terrorystyczna Id]</remote-name>
+            <local-name>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id].[Grupa Terrorystyczna Id]</local-name>
+            <parent-name>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id]</parent-name>
+            <remote-alias>[Grupa Terrorystyczna].[Grupa Terrorystyczna Id].[Grupa Terrorystyczna Id].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Grupa Terrorystyczna Id</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>17137</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Grupa Terrorystyczna].[Grupa Terrorystyczna Id] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Grupa Terrorystyczna].[Name].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Grupa Terrorystyczna].[Name].[(All)]</local-name>
+            <parent-name>[Grupa Terrorystyczna].[Name]</parent-name>
+            <remote-alias>[Grupa Terrorystyczna].[Name].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Grupa Terrorystyczna].[Name].[Name]</remote-name>
+            <local-name>[Grupa Terrorystyczna].[Name].[Name]</local-name>
+            <parent-name>[Grupa Terrorystyczna].[Name]</parent-name>
+            <remote-alias>[Grupa Terrorystyczna].[Name].[Name].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Name</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3538</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Grupa Terrorystyczna].[Name] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Lokalizacja].[City]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Lokalizacja].[City]</local-name>
+            <parent-name>[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[City]</remote-alias>
+            <caption>City</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>34581</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Lokalizacja].[City].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Lokalizacja].[Country]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Lokalizacja].[Country]</local-name>
+            <parent-name>[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Country]</remote-alias>
+            <caption>Country</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>205</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Lokalizacja].[Country].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Lokalizacja].[Dlugosc Geo]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Lokalizacja].[Dlugosc Geo]</local-name>
+            <parent-name>[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Dlugosc Geo]</remote-alias>
+            <caption>Dlugosc Geo</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>47890</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Lokalizacja].[Dlugosc Geo].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Lokalizacja].[Lokalizacja]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Lokalizacja].[Lokalizacja]</local-name>
+            <parent-name>[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Lokalizacja]</remote-alias>
+            <caption>Lokalizacja</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>37605</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Lokalizacja].[Lokalizacja].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>true</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Lokalizacja].[Lokalizacja Id]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Lokalizacja].[Lokalizacja Id]</local-name>
+            <parent-name>[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Lokalizacja Id]</remote-alias>
+            <caption>Lokalizacja Id</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>165754</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Lokalizacja].[Lokalizacja Id].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Lokalizacja].[Provstate]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Lokalizacja].[Provstate]</local-name>
+            <parent-name>[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Provstate]</remote-alias>
+            <caption>Provstate</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>2806</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Lokalizacja].[Provstate].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Lokalizacja].[Region]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Lokalizacja].[Region]</local-name>
+            <parent-name>[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Region]</remote-alias>
+            <caption>Region</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Lokalizacja].[Region].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Lokalizacja].[Szerokosc Geo]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Lokalizacja].[Szerokosc Geo]</local-name>
+            <parent-name>[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Szerokosc Geo]</remote-alias>
+            <caption>Szerokosc Geo</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>48177</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Lokalizacja].[Szerokosc Geo].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[City].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Lokalizacja].[City].[(All)]</local-name>
+            <parent-name>[Lokalizacja].[City]</parent-name>
+            <remote-alias>[Lokalizacja].[City].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[City].[City]</remote-name>
+            <local-name>[Lokalizacja].[City].[City]</local-name>
+            <parent-name>[Lokalizacja].[City]</parent-name>
+            <remote-alias>[Lokalizacja].[City].[City].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>City</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>34581</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[City] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Country].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Lokalizacja].[Country].[(All)]</local-name>
+            <parent-name>[Lokalizacja].[Country]</parent-name>
+            <remote-alias>[Lokalizacja].[Country].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Country].[Country]</remote-name>
+            <local-name>[Lokalizacja].[Country].[Country]</local-name>
+            <parent-name>[Lokalizacja].[Country]</parent-name>
+            <remote-alias>[Lokalizacja].[Country].[Country].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Country</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>205</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[Country] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Dlugosc Geo].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Lokalizacja].[Dlugosc Geo].[(All)]</local-name>
+            <parent-name>[Lokalizacja].[Dlugosc Geo]</parent-name>
+            <remote-alias>[Lokalizacja].[Dlugosc Geo].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Dlugosc Geo].[Dlugosc Geo]</remote-name>
+            <local-name>[Lokalizacja].[Dlugosc Geo].[Dlugosc Geo]</local-name>
+            <parent-name>[Lokalizacja].[Dlugosc Geo]</parent-name>
+            <remote-alias>[Lokalizacja].[Dlugosc Geo].[Dlugosc Geo].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Dlugosc Geo</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>47890</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[Dlugosc Geo] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Lokalizacja].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Lokalizacja].[Lokalizacja].[(All)]</local-name>
+            <parent-name>[Lokalizacja].[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Lokalizacja].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Lokalizacja].[Region]</remote-name>
+            <local-name>[Lokalizacja].[Lokalizacja].[Region]</local-name>
+            <parent-name>[Lokalizacja].[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Lokalizacja].[Region].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Region</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[Region] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Lokalizacja].[Country]</remote-name>
+            <local-name>[Lokalizacja].[Lokalizacja].[Country]</local-name>
+            <parent-name>[Lokalizacja].[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Lokalizacja].[Country].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Country</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>205</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[Country] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Lokalizacja].[Provstate]</remote-name>
+            <local-name>[Lokalizacja].[Lokalizacja].[Provstate]</local-name>
+            <parent-name>[Lokalizacja].[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Lokalizacja].[Provstate].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Provstate</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2806</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[Provstate] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Lokalizacja].[City]</remote-name>
+            <local-name>[Lokalizacja].[Lokalizacja].[City]</local-name>
+            <parent-name>[Lokalizacja].[Lokalizacja]</parent-name>
+            <remote-alias>[Lokalizacja].[Lokalizacja].[City].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>City</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>34581</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[City] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Lokalizacja Id].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Lokalizacja].[Lokalizacja Id].[(All)]</local-name>
+            <parent-name>[Lokalizacja].[Lokalizacja Id]</parent-name>
+            <remote-alias>[Lokalizacja].[Lokalizacja Id].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Lokalizacja Id].[Lokalizacja Id]</remote-name>
+            <local-name>[Lokalizacja].[Lokalizacja Id].[Lokalizacja Id]</local-name>
+            <parent-name>[Lokalizacja].[Lokalizacja Id]</parent-name>
+            <remote-alias>[Lokalizacja].[Lokalizacja Id].[Lokalizacja Id].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Lokalizacja Id</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>165754</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[Lokalizacja Id] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Provstate].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Lokalizacja].[Provstate].[(All)]</local-name>
+            <parent-name>[Lokalizacja].[Provstate]</parent-name>
+            <remote-alias>[Lokalizacja].[Provstate].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Provstate].[Provstate]</remote-name>
+            <local-name>[Lokalizacja].[Provstate].[Provstate]</local-name>
+            <parent-name>[Lokalizacja].[Provstate]</parent-name>
+            <remote-alias>[Lokalizacja].[Provstate].[Provstate].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Provstate</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2806</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[Provstate] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Region].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Lokalizacja].[Region].[(All)]</local-name>
+            <parent-name>[Lokalizacja].[Region]</parent-name>
+            <remote-alias>[Lokalizacja].[Region].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Region].[Region]</remote-name>
+            <local-name>[Lokalizacja].[Region].[Region]</local-name>
+            <parent-name>[Lokalizacja].[Region]</parent-name>
+            <remote-alias>[Lokalizacja].[Region].[Region].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Region</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>13</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[Region] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Szerokosc Geo].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Lokalizacja].[Szerokosc Geo].[(All)]</local-name>
+            <parent-name>[Lokalizacja].[Szerokosc Geo]</parent-name>
+            <remote-alias>[Lokalizacja].[Szerokosc Geo].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Lokalizacja].[Szerokosc Geo].[Szerokosc Geo]</remote-name>
+            <local-name>[Lokalizacja].[Szerokosc Geo].[Szerokosc Geo]</local-name>
+            <parent-name>[Lokalizacja].[Szerokosc Geo]</parent-name>
+            <remote-alias>[Lokalizacja].[Szerokosc Geo].[Szerokosc Geo].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Szerokosc Geo</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>48177</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Lokalizacja].[Szerokosc Geo] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Event Id]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Event Id]</local-name>
+            <remote-alias>[Measures].[Event Id]</remote-alias>
+            <caption>Event Id</caption>
+            <family>Fact Atak Terrorystyczny</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[Fact Atak Terrorystyczny].[Event Id]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Rannych]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rannych]</local-name>
+            <remote-alias>[Measures].[Rannych]</remote-alias>
+            <caption>Rannych</caption>
+            <family>Fact Atak Terrorystyczny</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[Fact Atak Terrorystyczny].[Rannych]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Zabitych]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zabitych]</local-name>
+            <remote-alias>[Measures].[Zabitych]</remote-alias>
+            <caption>Zabitych</caption>
+            <family>Fact Atak Terrorystyczny</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[Fact Atak Terrorystyczny].[Zabitych]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Rannych Terrorystow]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rannych Terrorystow]</local-name>
+            <remote-alias>[Measures].[Rannych Terrorystow]</remote-alias>
+            <caption>Rannych Terrorystow</caption>
+            <family>Fact Atak Terrorystyczny</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[Fact Atak Terrorystyczny].[Rannych Terrorystow]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Zabitych Terrorystow]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zabitych Terrorystow]</local-name>
+            <remote-alias>[Measures].[Zabitych Terrorystow]</remote-alias>
+            <caption>Zabitych Terrorystow</caption>
+            <family>Fact Atak Terrorystyczny</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[Fact Atak Terrorystyczny].[Zabitych Terrorystow]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Wartosc Uszkodzonego Mienia]</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Wartosc Uszkodzonego Mienia]</local-name>
+            <remote-alias>[Measures].[Wartosc Uszkodzonego Mienia]</remote-alias>
+            <caption>Wartosc Uszkodzonego Mienia</caption>
+            <family>Fact Atak Terrorystyczny</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[Fact Atak Terrorystyczny].[Wartosc Uszkodzonego Mienia]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Zabitych Pozostałych]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zabitych Pozostałych]</local-name>
+            <remote-alias>[Measures].[Zabitych Pozostałych]</remote-alias>
+            <caption>Zabitych Pozostałych</caption>
+            <family>Fact Atak Terrorystyczny</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[Fact Atak Terrorystyczny].[Zabitych Pozostałych]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Rannych Pozostałych]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rannych Pozostałych]</local-name>
+            <remote-alias>[Measures].[Rannych Pozostałych]</remote-alias>
+            <caption>Rannych Pozostałych</caption>
+            <family>Fact Atak Terrorystyczny</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[Fact Atak Terrorystyczny].[Rannych Pozostałych]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Fact Atak Terrorystyczny Count]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fact Atak Terrorystyczny Count]</local-name>
+            <remote-alias>[Measures].[Fact Atak Terrorystyczny Count]</remote-alias>
+            <caption>Fact Atak Terrorystyczny Count</caption>
+            <family>Fact Atak Terrorystyczny</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[Fact Atak Terrorystyczny].[Fact Atak Terrorystyczny Count]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Sukces Ataku Sum]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sukces Ataku Sum]</local-name>
+            <remote-alias>[Measures].[Sukces Ataku Sum]</remote-alias>
+            <caption>Sukces Ataku Sum</caption>
+            <family>Fact Atak Terrorystyczny</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[Fact Atak Terrorystyczny].[Sukces Ataku Sum]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt]</local-name>
+            <parent-name>[Rodzaj Ataku]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt]</remote-alias>
+            <caption>Organizowany Przez Jednostke Txt</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Rodzaj Ataku].[Organizowany Przez Jednostke Txt].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Rodzaj Ataku].[Rodzaj Ataku Id]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Rodzaj Ataku].[Rodzaj Ataku Id]</local-name>
+            <parent-name>[Rodzaj Ataku]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Rodzaj Ataku Id]</remote-alias>
+            <caption>Rodzaj Ataku Id</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>122</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Rodzaj Ataku].[Rodzaj Ataku Id].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Rodzaj Ataku].[Samobójstwo Txt]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Rodzaj Ataku].[Samobójstwo Txt]</local-name>
+            <parent-name>[Rodzaj Ataku]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Samobójstwo Txt]</remote-alias>
+            <caption>Samobójstwo Txt</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Rodzaj Ataku].[Samobójstwo Txt].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Rodzaj Ataku].[Typ Ataku]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Rodzaj Ataku].[Typ Ataku]</local-name>
+            <parent-name>[Rodzaj Ataku]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Typ Ataku]</remote-alias>
+            <caption>Typ Ataku</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>10</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Rodzaj Ataku].[Typ Ataku].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Rodzaj Ataku].[Zadany Okup Txt]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Rodzaj Ataku].[Zadany Okup Txt]</local-name>
+            <parent-name>[Rodzaj Ataku]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Zadany Okup Txt]</remote-alias>
+            <caption>Zadany Okup Txt</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Rodzaj Ataku].[Zadany Okup Txt].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Rodzaj Ataku].[Zakładnicy Txt]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Rodzaj Ataku].[Zakładnicy Txt]</local-name>
+            <parent-name>[Rodzaj Ataku]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Zakładnicy Txt]</remote-alias>
+            <caption>Zakładnicy Txt</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Rodzaj Ataku].[Zakładnicy Txt].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt].[(All)]</local-name>
+            <parent-name>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt].[Organizowany Przez Jednostke Txt]</remote-name>
+            <local-name>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt].[Organizowany Przez Jednostke Txt]</local-name>
+            <parent-name>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Organizowany Przez Jednostke Txt].[Organizowany Przez Jednostke Txt].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Organizowany Przez Jednostke Txt</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Rodzaj Ataku].[Organizowany Przez Jednostke Txt] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Rodzaj Ataku Id].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Rodzaj Ataku].[Rodzaj Ataku Id].[(All)]</local-name>
+            <parent-name>[Rodzaj Ataku].[Rodzaj Ataku Id]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Rodzaj Ataku Id].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Rodzaj Ataku Id].[Rodzaj Ataku Id]</remote-name>
+            <local-name>[Rodzaj Ataku].[Rodzaj Ataku Id].[Rodzaj Ataku Id]</local-name>
+            <parent-name>[Rodzaj Ataku].[Rodzaj Ataku Id]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Rodzaj Ataku Id].[Rodzaj Ataku Id].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Rodzaj Ataku Id</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>122</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Rodzaj Ataku].[Rodzaj Ataku Id] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Samobójstwo Txt].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Rodzaj Ataku].[Samobójstwo Txt].[(All)]</local-name>
+            <parent-name>[Rodzaj Ataku].[Samobójstwo Txt]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Samobójstwo Txt].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Samobójstwo Txt].[Samobójstwo Txt]</remote-name>
+            <local-name>[Rodzaj Ataku].[Samobójstwo Txt].[Samobójstwo Txt]</local-name>
+            <parent-name>[Rodzaj Ataku].[Samobójstwo Txt]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Samobójstwo Txt].[Samobójstwo Txt].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Samobójstwo Txt</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Rodzaj Ataku].[Samobójstwo Txt] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Typ Ataku].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Rodzaj Ataku].[Typ Ataku].[(All)]</local-name>
+            <parent-name>[Rodzaj Ataku].[Typ Ataku]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Typ Ataku].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Typ Ataku].[Typ Ataku]</remote-name>
+            <local-name>[Rodzaj Ataku].[Typ Ataku].[Typ Ataku]</local-name>
+            <parent-name>[Rodzaj Ataku].[Typ Ataku]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Typ Ataku].[Typ Ataku].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Typ Ataku</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>10</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Rodzaj Ataku].[Typ Ataku] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Zadany Okup Txt].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Rodzaj Ataku].[Zadany Okup Txt].[(All)]</local-name>
+            <parent-name>[Rodzaj Ataku].[Zadany Okup Txt]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Zadany Okup Txt].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Zadany Okup Txt].[Zadany Okup Txt]</remote-name>
+            <local-name>[Rodzaj Ataku].[Zadany Okup Txt].[Zadany Okup Txt]</local-name>
+            <parent-name>[Rodzaj Ataku].[Zadany Okup Txt]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Zadany Okup Txt].[Zadany Okup Txt].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Zadany Okup Txt</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Rodzaj Ataku].[Zadany Okup Txt] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Zakładnicy Txt].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Rodzaj Ataku].[Zakładnicy Txt].[(All)]</local-name>
+            <parent-name>[Rodzaj Ataku].[Zakładnicy Txt]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Zakładnicy Txt].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Rodzaj Ataku].[Zakładnicy Txt].[Zakładnicy Txt]</remote-name>
+            <local-name>[Rodzaj Ataku].[Zakładnicy Txt].[Zakładnicy Txt]</local-name>
+            <parent-name>[Rodzaj Ataku].[Zakładnicy Txt]</parent-name>
+            <remote-alias>[Rodzaj Ataku].[Zakładnicy Txt].[Zakładnicy Txt].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Zakładnicy Txt</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Rodzaj Ataku].[Zakładnicy Txt] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>Fact Atak Terrorystyczny</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>Fact Atak Terrorystyczny</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Bron].[Bron Id]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Bron]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>Fact Atak Terrorystyczny</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>Fact Atak Terrorystyczny</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Cel Ataku].[Cel Ataku Id]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Cel Ataku]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>Fact Atak Terrorystyczny</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>Fact Atak Terrorystyczny</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Data].[Data Id]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Data]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>Fact Atak Terrorystyczny</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>Fact Atak Terrorystyczny</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Grupa Terrorystyczna].[Grupa Terrorystyczna Id]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Grupa Terrorystyczna]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>Fact Atak Terrorystyczny</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>Fact Atak Terrorystyczny</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Lokalizacja].[Lokalizacja Id]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Lokalizacja]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>Fact Atak Terrorystyczny</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>Fact Atak Terrorystyczny</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Rodzaj Ataku].[Rodzaj Ataku Id]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Rodzaj Ataku]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ilosc Atakow' datatype='integer' name='[Fact Atak Terrorystyczny Count]' role='measure' type='quantitative' />
+      <column approximate-count='34581' datatype='string' name='[Lokalizacja].[City].[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column approximate-count='205' datatype='string' name='[Lokalizacja].[Country].[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column approximate-count='34581' datatype='string' name='[Lokalizacja].[Lokalizacja].[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column approximate-count='205' datatype='string' name='[Lokalizacja].[Lokalizacja].[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column-instance column='[Bron].[Typ Broni].[Typ Broni]' derivation='None' name='[Bron].[Typ Broni].[none:Typ Broni:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Bron].[Typ Broni].[none:Typ Broni:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Radiological]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Biological]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Firearms]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Sabotage Equipment]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Incendiary]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Chemical]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Melee]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Unknown]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Other]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Explosives]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Vehicle (not to include vehicle-borne explosives, i.e., car or truck bombs)]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[Bron].[Typ Broni].&amp;[Fake Weapons]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='localhost' name='msolap.09hmo0v17dq15o18swc031oioql7' />
+          </datasources>
+          <datasource-dependencies datasource='msolap.09hmo0v17dq15o18swc031oioql7'>
+            <column-instance column='[Bron].[Typ Broni].[Typ Broni]' derivation='None' name='[Bron].[Typ Broni].[none:Typ Broni:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cel Ataku].[Target Type].[Target Type]' derivation='None' name='[Cel Ataku].[Target Type].[none:Target Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fact Atak Terrorystyczny Count]' derivation='None' name='[none:Fact Atak Terrorystyczny Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Target Type]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-level='0' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Fact Atak Terrorystyczny Count]' function='order' user:ui-marker='order'>
+                <groupfilter function='hierarchy-members' hierarchy='[Cel Ataku].[Target Type]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Target Type]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Target Type].[none:Target Type:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[msolap.09hmo0v17dq15o18swc031oioql7].[Bron].[Typ Broni].[none:Typ Broni:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[msolap.09hmo0v17dq15o18swc031oioql7].[none:Fact Atak Terrorystyczny Count:qk]</rows>
+        <cols>[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Target Type].[none:Target Type:nk]</cols>
+      </table>
+      <simple-id uuid='{150D9298-CA41-4E0D-BA0D-5CAA7B8041A0}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='localhost' name='msolap.09hmo0v17dq15o18swc031oioql7' />
+          </datasources>
+          <datasource-dependencies datasource='msolap.09hmo0v17dq15o18swc031oioql7'>
+            <column-instance column='[Bron].[Typ Broni].[Typ Broni]' derivation='None' name='[Bron].[Typ Broni].[none:Typ Broni:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cel Ataku].[Natality].[Natality]' derivation='None' name='[Cel Ataku].[Natality].[none:Natality:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fact Atak Terrorystyczny Count]' derivation='None' name='[none:Fact Atak Terrorystyczny Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Natality]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-level='0' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Fact Atak Terrorystyczny Count]' function='order' user:ui-marker='order'>
+                <groupfilter function='hierarchy-members' hierarchy='[Cel Ataku].[Natality]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Natality]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Natality].[none:Natality:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[msolap.09hmo0v17dq15o18swc031oioql7].[Bron].[Typ Broni].[none:Typ Broni:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[msolap.09hmo0v17dq15o18swc031oioql7].[none:Fact Atak Terrorystyczny Count:qk]</rows>
+        <cols>[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Natality].[none:Natality:nk]</cols>
+      </table>
+      <simple-id uuid='{D9357E00-2E54-430B-B6AD-64CF1C99D89F}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[msolap.09hmo0v17dq15o18swc031oioql7].[Bron].[Typ Broni].[none:Typ Broni:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[msolap.09hmo0v17dq15o18swc031oioql7].[Bron].[Pod Typ Broni].[none:Pod Typ Broni:nk]</field>
+            <field>[msolap.09hmo0v17dq15o18swc031oioql7].[Bron].[Typ Broni].[none:Typ Broni:nk]</field>
+            <field>[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Target Type].[none:Target Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{83DB9EFE-6ED6-4D1A-9604-4DBAC44D14A0}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[msolap.09hmo0v17dq15o18swc031oioql7].[Bron].[Typ Broni].[none:Typ Broni:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[msolap.09hmo0v17dq15o18swc031oioql7].[Bron].[Typ Broni].[none:Typ Broni:nk]</field>
+            <field>[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Natality].[none:Natality:nk]</field>
+            <field>[msolap.09hmo0v17dq15o18swc031oioql7].[Cel Ataku].[Target Type].[none:Target Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7852BE80-2C48-4A20-8352-CF316E6961A5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      H4qu+ATXBaKYAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      xEPbAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

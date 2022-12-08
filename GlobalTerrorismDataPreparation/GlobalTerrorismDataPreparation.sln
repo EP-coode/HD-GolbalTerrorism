@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "GlobalTerrorismDataPreparation", "GlobalTerrorismDataPreparation\GlobalTerrorismDataPreparation.dtproj", "{D80093AF-8104-4D52-8BE9-166C419FEEEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D80093AF-8104-4D52-8BE9-166C419FEEEB}.Development|Default.ActiveCfg = Development
+		{D80093AF-8104-4D52-8BE9-166C419FEEEB}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFF2183E-C4D4-4FB1-96C1-E7F9599CA205}
+	EndGlobalSection
+EndGlobal
